@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ProductM.Models.VerifyAccount>
+@{
+}
+<table class="table table-bordered">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Image</td>
+
+
+    </tr>
+    @foreach(var ver in Model)
+            {
+<tr>
+    <td>@ver.Id</td>
+    <td>@ver.name</td>
+    <td><img src="@ver.Image" height="60" width="60"/></td>
+
+
+</tr>
+            }
+</table>
